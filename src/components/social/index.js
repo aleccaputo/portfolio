@@ -1,6 +1,4 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 import {FaGithub, FaLinkedinIn} from "react-icons/fa";
 import 'animate.css';
 import './social.css'; 

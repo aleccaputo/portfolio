@@ -9,8 +9,8 @@
 }
 
 .social--icon:hover {
-    -webkit-animation: bounce 1s;
-    animation: bounce 1s;
+    -webkit-animation: bounce .7s;
+    animation: bounce .7s;
 }
 
 .social--github {
@@ -22,5 +22,5 @@
 }
 
 .social--container {
-    display: inline-block;
+    text-align: center;
 }
