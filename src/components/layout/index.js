@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import "./layout.css"
 
-export const Layout = ({ children }) => (
+export const Layout = ({ children, socialMediaLinks }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,9 +29,8 @@ export const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href={socialMediaLinks.linkedIn}>LinkedIn</a>
+            <a href={socialMediaLinks.github}>Github</a>
           </footer>
         </div>
       </>
@@ -41,4 +40,5 @@ export const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  socialMediaLinks: PropTypes.object
 }
