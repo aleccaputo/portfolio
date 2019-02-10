@@ -1,0 +1,26 @@
+.social--link {
+    margin: 2rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.social--icon {
+    font-size: 2rem;
+}
+
+.social--icon:hover {
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+
+.social--github {
+    color: purple;
+}
+
+.social--linkedin {
+    color: blue;
+}
+
+.social--container {
+    display: inline-block;
+}
