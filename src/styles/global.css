@@ -1,0 +1,26 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.column--2 {
+    flex: 50%;
+}
+
+.column--3 {
+    flex: 33.33%;
+}
+
+.column--4 {
+    flex: 25%;
+}
+
+.column--1 {
+    flex: 100%;
+}
+
+.col-centered {
+    text-align: center;
+}

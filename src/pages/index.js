@@ -1,25 +1,50 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import {Layout} from "../components/layout"
-import {Image} from "../components/image"
-import SEO from "../components/seo"
+import { Layout } from '../components/layout';
+import { Image } from '../components/image';
+import SEO from '../components/seo';
 import Social from '../components/social';
-import {constants} from '../data/constants'
+import { constants } from '../data/constants';
+import '../styles/global.css';
 import './index.css';
 
-const links =  {...constants.socialMediaLinks, email: constants.email};
-const IndexPage = () => (
-  <Layout socialMediaLinks={constants.socialMediaLinks}>
-    <SEO title="Home" keywords={[`gatsby`, , `Alec Caputo`, `application`, `react`, `portfolio`, `javascript`, `es6`, `software engineer`, `job`, `recruit`]} />
-    <div style={{ maxWidth: `300px`, margin: `0 auto` }}>
-      <Image />
-      <Social links={links}/>
-    </div>
-    <h1 className={'index--header'}>Alec Caputo</h1>
-    <p>Full Stack software engineer building modern web applications using bleeding edge Javascript and React.js, </p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const links = { ...constants.socialMediaLinks, email: constants.email };
 
-export default IndexPage
+const IndexPage = () => (
+  <Layout socialMediaLinks={links}>
+    <SEO
+      title='Home'
+      keywords={[
+        `gatsby`,
+        ,
+        `Alec Caputo`,
+        `application`,
+        `react`,
+        `portfolio`,
+        `javascript`,
+        `es6`,
+        `software engineer`,
+        `job`,
+        `recruit`
+      ]}
+    />
+    <div className={'row'}>
+      <div className={'column--2'}>
+        <div className={'index--image-container'}>
+          <Image />
+        </div>
+        <Social links={links} />
+      </div>
+      <div className={'column--2'}>
+        <h1 className={'index--header'}>Alec Caputo</h1>
+        <p>
+          Full Stack software engineer building modern web applications using
+          bleeding edge Javascript and React.js.
+        </p>
+      </div>
+    </div>
+  </Layout>
+);
+
+export default IndexPage;

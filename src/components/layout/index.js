@@ -28,9 +28,13 @@ export const Layout = ({ children, socialMediaLinks }) => (
           }}
         >
           <main>{children}</main>
+          <p>{console.log(JSON.stringify(socialMediaLinks))}</p>
           <footer>
-            <a href={socialMediaLinks.linkedIn}>LinkedIn</a>
-            <a href={socialMediaLinks.github}>Github</a>
+            <div className={'row'} style={{margin: `0 100px 0 100px`}}>
+              <a className={'column--3 col-centered'} href={socialMediaLinks.linkedIn}>LinkedIn</a>
+              <a className={'column--3 col-centered'} href={socialMediaLinks.github}>Github</a>
+              <a className={'column--3 col-centered'} href={socialMediaLinks.email}>Contact</a>
+            </div>
           </footer>
         </div>
       </>
