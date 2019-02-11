@@ -9,8 +9,6 @@ import { constants } from '../data/constants';
 import '../styles/global.css';
 import './index.css';
 
-const links = { ...constants.socialMediaLinks, email: constants.email };
-
 const IndexPage = () => (
   <Layout socialMediaLinks={links}>
     <SEO
