@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "portfolio",
+  "description": "Portfolio for Alec Caputo",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alec Caputo",
   "dependencies": {
     "animate.css": "^3.7.0",
     "gatsby": "^2.0.118",
@@ -33,12 +32,5 @@
     "serve": "gatsby serve",
     "heroku-postbuild": "gatsby build",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
