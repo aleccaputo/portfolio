@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 import Social from '../components/social';
 import { constants } from '../data/constants';
 import '../styles/global.css';
-import './index.css';
+import '../styles/index.css';
 
 const IndexPage = () => (
   <Layout socialMediaLinks={constants}>
