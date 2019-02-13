@@ -32,7 +32,7 @@ const IndexPage = () => (
         <div className={'index--image-container'}>
           <Image />
         </div>
-        <Social links={constants.socialMediaLinks} />
+        <Social links={{...constants.socialMediaLinks, email: constants.email}} />
       </div>
       <div className={'column--2'}>
         <h1 className={'index--header'}>Alec Caputo</h1>
