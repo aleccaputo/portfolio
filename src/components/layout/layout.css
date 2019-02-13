@@ -613,8 +613,17 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.layout--footer {
+  margin: 100px 100px 0 100px
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+
+  .layout--footer {
+    margin: 0;
   }
 }

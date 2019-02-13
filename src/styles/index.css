@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.index--summary {
+    flex: 50%;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .index--header {
         display: block;

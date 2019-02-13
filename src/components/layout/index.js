@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import "./layout.css"
 
-export const Layout = ({ children, socialMediaLinks }) => (
+export const Layout = ({ children, links }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -28,12 +28,11 @@ export const Layout = ({ children, socialMediaLinks }) => (
           }}
         >
           <main>{children}</main>
-          <p>{console.log(JSON.stringify(socialMediaLinks))}</p>
           <footer>
-            <div className={'row'} style={{margin: `0 100px 0 100px`}}>
-              <a className={'column--3 col-centered'} href={socialMediaLinks.linkedIn}>LinkedIn</a>
-              <a className={'column--3 col-centered'} href={socialMediaLinks.github}>Github</a>
-              <a className={'column--3 col-centered'} href={socialMediaLinks.email}>Contact</a>
+            <div className={'row layout--footer'}>
+              <a className={'column--3 col-centered'} href={links.linkedIn}>LinkedIn</a>
+              <a className={'column--3 col-centered'} href={links.github}>Github</a>
+              <a className={'column--3 col-centered'} href={links.email}>Contact</a>
             </div>
           </footer>
         </div>

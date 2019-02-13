@@ -6,14 +6,14 @@ import './social.css';
 
 const Social = ({links}) => (
   <div className={'social--container'}>
-    <a className={'social--link'} href={links.linkedIn} target={'_blank'}>
-      <FaLinkedinIn className={'social--icon social--linkedin animated faster'}/>
+    <a className={'social--link animated faster'} href={links.linkedIn} target={'_blank'}>
+      <FaLinkedinIn className={'social--icon social--linkedin'}/>
     </a>
-    <a className={'social--link'} href={links.github} target={'_blank'}>
-      <FaGithub className={'social--icon social--github animated faster'}/>
+    <a className={'social--link animated faster'} href={links.github} target={'_blank'}>
+      <FaGithub className={'social--icon social--github'}/>
     </a>
-    <a className={'social--link'} href={`mailto:${links.email}`}>
-      <FaEnvelope className={'social--icon social--email animated faster'}/>
+    <a className={'social--link animated faster'} href={`mailto:${links.email}`}>
+      <FaEnvelope className={'social--icon social--email'}/>
     </a>
   </div>
 );

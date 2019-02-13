@@ -10,7 +10,7 @@ import '../styles/global.css';
 import '../styles/index.css';
 
 const IndexPage = () => (
-  <Layout socialMediaLinks={constants}>
+  <Layout links={{...constants.socialMediaLinks, email: constants.email}}>
     <SEO
       title='Home'
       keywords={[
@@ -32,7 +32,7 @@ const IndexPage = () => (
         <div className={'index--image-container'}>
           <Image />
         </div>
-        <Social links={constants} />
+        <Social links={constants.socialMediaLinks} />
       </div>
       <div className={'column--2'}>
         <h1 className={'index--header'}>Alec Caputo</h1>
