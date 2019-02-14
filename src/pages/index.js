@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import { Layout } from '../components/layout';
 import { Image } from '../components/image';
 import SEO from '../components/seo';
 import Social from '../components/social';
+import Projects from '../components/projects';
 import { constants } from '../data/constants';
 import '../styles/global.css';
 import '../styles/index.css';
@@ -42,6 +41,7 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
+    <Projects />
   </Layout>
 );
 
