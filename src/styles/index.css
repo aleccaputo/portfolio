@@ -1,5 +1,7 @@
 .index--header {
     display: inline-block;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .row .index--social {
@@ -13,6 +15,23 @@
 
 .index--summary {
     flex: 50%;
+}
+
+.index--description {
+    margin-bottom: 30px;
+}
+
+body {
+    color: #FFFFFF;
+    background-color: #303030;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+hr {
+    background-color: lightgray;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

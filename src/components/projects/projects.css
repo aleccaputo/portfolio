@@ -1,14 +1,23 @@
 .projects--title {
     text-align: center;
+    text-decoration: underline;
 }
 
 .project--container {
     margin: 50px;
+    text-align: center;
+}
+
+.projects--icon {
+    color: rebeccapurple;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .project--container{
-        width: 60%;
         margin: 0 auto;
+    }
+
+    .portfolio--row {
+        display: block;
     }
 }

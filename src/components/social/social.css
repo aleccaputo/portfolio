@@ -14,7 +14,7 @@
 }
 
 .social--github {
-    color: purple;
+    color: rebeccapurple;
 }
 
 .social--linkedin {
@@ -22,7 +22,7 @@
 }
 
 .social--email {
-    color: black;
+    color: lightgray;
 }
 
 .social--container {
@@ -32,6 +32,6 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .social--link {
-        padding: 5px;
+        padding: 20px;
     }
 }

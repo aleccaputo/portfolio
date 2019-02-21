@@ -5,60 +5,66 @@ import './projects.css';
 const Projects = () => (
   <div>
     <h1 className={'projects--title'}>Projects</h1>
+    <hr />
     <article className={'project--container'}>
-      <h2>
-        Profolio{' '}
-        <a href={'https://github.com/aleccaputo/portfolio'}>
-          <FaGithub />
-        </a>
-      </h2>
-      <ul>
-        <li>
-          Built using{' '}
-          <a
-            className={'projects--gatsby-link'}
-            href='https://www.gatsbyjs.org/'
-          >
-            GatsbyJS
-          </a>
-        </li>
-        <li>
-            Javascript, React, CSS
-        </li>
-      </ul>
+      <div className={'row portfolio--row'}>
+        <div className={'column--2'}>
+          <h2>
+            Profolio{' '}
+            <a href={'https://github.com/aleccaputo/portfolio'}>
+              <FaGithub className={'projects--icon'}/>
+            </a>
+          </h2>
+        </div>
+        <div className={'column--2'}>
+          <p>
+            Built using{' '}
+            <a
+              className={'projects--gatsby-link'}
+              href='https://www.gatsbyjs.org/'
+            >
+              GatsbyJS
+            </a>
+          </p>
+          <p>Javascript, React, CSS</p>
+        </div>
+      </div>
     </article>
+    <hr />
     <article className={'project--container'}>
-      <h2>
-        Green Up{' '}
-        <a href={'https://github.com/codeforbtv/green-up-app'}>
-          <FaGithub />
-        </a>
-      </h2>
-      <ul>
-        <li>
-          Built with functional Javascript and React Native
-        </li>
-        <li>
-            Javascript, React Native, CSS, Functional Programming
-        </li>
-      </ul>
+      <div className={'row protfolio--row'}>
+        <div className={'column--2'}>
+          <h3>
+            Green Up{' '}
+            <a href={'https://github.com/codeforbtv/green-up-app'}>
+            <FaGithub className={'projects--icon'}/>
+            </a>
+          </h3>
+        </div>
+        <div className={'column--2'}>
+          <p>Built with functional Javascript and React Native</p>
+          <p>Javascript, React Native, CSS, Functional Programming</p>
+        </div>
+      </div>
     </article>
+    <hr />
     <article className={'project--container'}>
-      <h2>
-        Ski Lift{' '}
-        <a href={'https://github.com/aleccaputo/ski-lift'}>
-          <FaGithub />
-        </a>
-      </h2>
-      <ul>
-        <li>
-          Ride sharing app with skiers and snowboarders in mind
-        </li>
-        <li>
-            Javascript, React Native, CSS
-        </li>
-      </ul>
+      <div className={'row protfolio--row'}>
+        <div className={'column--2'}>
+          <h3>
+            Ski Lift{' '}
+            <a href={'https://github.com/aleccaputo/ski-lift'}>
+            <FaGithub className={'projects--icon'}/>
+            </a>
+          </h3>
+        </div>
+        <div className={'column--2'}>
+          <p>Ride sharing app with skiers and snowboarders in mind</p>
+          <p>Javascript, React Native, CSS</p>
+        </div>
+      </div>
     </article>
+    <hr />
   </div>
 );
 

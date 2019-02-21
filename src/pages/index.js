@@ -26,7 +26,7 @@ const IndexPage = () => (
         `recruit`
       ]}
     />
-    <div className={'row'}>
+    <div className={'row--header'}>
       <div className={'column--2'}>
         <div className={'index--image-container'}>
           <Image />
@@ -35,7 +35,7 @@ const IndexPage = () => (
       </div>
       <div className={'column--2'}>
         <h1 className={'index--header'}>Alec Caputo</h1>
-        <p>
+        <p className={'index--description'}>
           Full Stack software engineer building modern web applications using
           bleeding edge Javascript and React.js.
         </p>

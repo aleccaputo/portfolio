@@ -1,4 +1,11 @@
 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.row--header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,21 +13,27 @@
 }
 
 .column--2 {
-    flex: 50%;
+  flex: 50%;
 }
 
 .column--3 {
-    flex: 33.33%;
+  flex: 33.33%;
 }
 
 .column--4 {
-    flex: 25%;
+  flex: 25%;
 }
 
 .column--1 {
-    flex: 100%;
+  flex: 100%;
 }
 
 .col-centered {
-    text-align: center;
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .row--header {
+    display: block;
+  }
 }
