@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Header from "../header"
 import "./layout.css"
 
@@ -30,9 +30,9 @@ export const Layout = ({ children, links }) => (
           <main>{children}</main>
           <footer>
             <div className={'row layout--footer'}>
-              <a className={'column--3 col-centered'} href={links.linkedIn}>LinkedIn</a>
-              <a className={'column--3 col-centered'} href={links.github}>Github</a>
-              <a className={'column--3 col-centered'} href={links.email}>Contact</a>
+              <OutboundLink className={'column--3 col-centered'} href={links.linkedIn}>LinkedIn</OutboundLink>
+              <OutboundLink className={'column--3 col-centered'} href={links.github}>Github</OutboundLink>
+              <OutboundLink className={'column--3 col-centered'} href={links.email}>Contact</OutboundLink>
             </div>
           </footer>
         </div>

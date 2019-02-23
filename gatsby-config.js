@@ -40,12 +40,22 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/alec.jpg`, // This path is relative to the root of the site.
         include_favicon: true // Include favicon
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-135079071-1',
+        // Puts tracking script in the head instead of the body
+        head: true,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
