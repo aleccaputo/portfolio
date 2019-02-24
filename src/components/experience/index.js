@@ -1,5 +1,6 @@
 import React from 'react';
-import { Image } from '../image';
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import PropTypes from 'prop-types';
 import './experience.css';
 
@@ -11,9 +12,27 @@ export const Experience = ({ jobs }) => (
         <hr />
         <div className={'column--2'}>
           <div className={'experience--image-container'}>
-            <a href={job.companyLink}>
-              <img src={`/${job.imageName}`} />
-            </a>
+            <StaticQuery
+              query={graphql`
+                query {
+                  placeholderImage: file(
+                    relativePath: { eq: "dealerpolicy.png" }
+                  ) {
+                    childImageSharp {
+                      fluid {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
+              `}
+              render={data => (
+                <Img
+                  className={'experience--image'}
+                  fluid={data.placeholderImage.childImageSharp.fluid}
+                />
+              )}
+            />
           </div>
         </div>
         <div className={'column--2'}>

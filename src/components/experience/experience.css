@@ -8,7 +8,15 @@
 }
 
 .experience--image-container {
+    width: 50%;
+    margin-left: 25%;
     text-align: center;
+}
+
+.experience--image {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
