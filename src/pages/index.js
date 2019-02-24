@@ -4,12 +4,12 @@ import { Image } from '../components/image';
 import SEO from '../components/seo';
 import Social from '../components/social';
 import Projects from '../components/projects';
-import { constants } from '../data/constants';
+import { Experience } from '../components/experience';
 import '../styles/global.css';
 import '../styles/index.css';
 
-const IndexPage = () => (
-  <Layout links={{...constants.socialMediaLinks, email: constants.email}}>
+const IndexPage = ({pageContext}) => (
+  <Layout links={{...pageContext.socialMediaLinks, email: pageContext.email}}>
     <SEO
       title='Home'
       keywords={[
@@ -31,7 +31,7 @@ const IndexPage = () => (
         <div className={'index--image-container'}>
           <Image />
         </div>
-        <Social links={{...constants.socialMediaLinks, email: constants.email}} />
+        <Social links={{...pageContext.socialMediaLinks, email: pageContext.email}} />
       </div>
       <div className={'column--2'}>
         <h1 className={'index--header'}>Alec Caputo</h1>
@@ -41,6 +41,7 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
+    <Experience jobs={pageContext.jobs} />
     <Projects />
   </Layout>
 );

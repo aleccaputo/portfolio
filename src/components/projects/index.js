@@ -10,9 +10,8 @@ const Projects = () => (
       <div className={'row portfolio--row'}>
         <div className={'column--2'}>
           <h2>
-            Profolio{' '}
             <a href={'https://github.com/aleccaputo/portfolio'}>
-              <FaGithub className={'projects--icon'}/>
+              Portfolio <FaGithub className={'projects--icon'}/>
             </a>
           </h2>
         </div>
@@ -35,9 +34,8 @@ const Projects = () => (
       <div className={'row protfolio--row'}>
         <div className={'column--2'}>
           <h3>
-            Green Up{' '}
             <a href={'https://github.com/codeforbtv/green-up-app'}>
-            <FaGithub className={'projects--icon'}/>
+              Green Up <FaGithub className={'projects--icon'}/>
             </a>
           </h3>
         </div>
@@ -52,9 +50,8 @@ const Projects = () => (
       <div className={'row protfolio--row'}>
         <div className={'column--2'}>
           <h3>
-            Ski Lift{' '}
             <a href={'https://github.com/aleccaputo/ski-lift'}>
-            <FaGithub className={'projects--icon'}/>
+            Ski Lift <FaGithub className={'projects--icon'}/>
             </a>
           </h3>
         </div>
