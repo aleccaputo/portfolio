@@ -32,7 +32,7 @@ export const Layout = ({ children, links }) => (
             <div className={'row layout--footer'}>
               <OutboundLink className={'column--3 col-centered'} href={links.linkedIn}>LinkedIn</OutboundLink>
               <OutboundLink className={'column--3 col-centered'} href={links.github}>Github</OutboundLink>
-              <OutboundLink className={'column--3 col-centered'} href={links.email}>Contact</OutboundLink>
+              <OutboundLink className={'column--3 col-centered'} href={`mailto:${links.email}`}>Contact</OutboundLink>
             </div>
           </footer>
         </div>
