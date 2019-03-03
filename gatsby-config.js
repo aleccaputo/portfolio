@@ -53,14 +53,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-135079071-1',
-        // Puts tracking script in the head instead of the body
-        head: true,
+        head: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
+        cookieDomain: 'aleccaputo.com'
       }
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ]
 };
