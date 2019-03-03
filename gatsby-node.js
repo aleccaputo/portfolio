@@ -17,15 +17,46 @@ exports.onCreatePage = ({ page, actions }) => {
                 technologies: [
                     'Javascript',
                     'ReactJS',
-                    'CSS',
+                    'Webpack',
+                    'Grunt',
+                    'CSS/LESS',
+                    'jQuery',
                     'MaterialUI',
                     'PHP',
                     'MySQL',
-                    'Azure',
-                    '.NET'
+                    'Azure'
+                ],
+                experience: [
+                    'Advocated for, researched, and moved the entire frontend from ES5/Require.Js to ES6 native import/export using webpack',
+                    'Write cutting edge ES2017+ Javascript',
+                    'React.js using the latest Context API and React hooks'
                 ],
                 imageName: 'dealerpolicy.png',
                 companyLink: 'https://dealerpolicy.com/'
+            }
+        ],
+        internships: [
+            {
+                company: 'Unidesk',
+                title: 'IT Intern',
+                technologies: [
+                    'Deployed and maintained a network monitoring tool using cacti',
+                    'Netowrk administration',
+                    'On-site VM deployments and server maintancince',
+                    'IT Helpdesk',
+                ],
+                companyLink: 'https://docs.citrix.com/en-us/unidesk.html'
+            },
+            {
+                company: 'SimpliVity',
+                title: 'IT Intern',
+                technologies: [
+                    'Managing and monitoring VM farms and vCenters using VMware vSphere',
+                    'ESXi',
+                    'Apex',
+                    'Helpdesk'
+                ],
+                companyLink: 'https://www.hpe.com/us/en/integrated-systems/simplivity.html'
             }
         ]
       },

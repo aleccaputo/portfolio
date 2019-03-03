@@ -41,7 +41,7 @@ const IndexPage = ({pageContext}) => (
         </p>
       </div>
     </div>
-    <Experience jobs={pageContext.jobs} />
+    <Experience jobs={pageContext.jobs} internships={pageContext.internships}/>
     <Projects />
   </Layout>
 );
