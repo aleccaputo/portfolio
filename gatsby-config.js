@@ -14,6 +14,12 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-135079071-1'
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -53,16 +59,6 @@ module.exports = {
           }
         ]
       }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-135079071-1',
-        head: true,
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: 'aleccaputo.com'
-      }
-    },
+    }
   ]
 };
