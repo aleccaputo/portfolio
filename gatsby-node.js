@@ -1,6 +1,6 @@
 exports.onCreatePage = ({ page, actions }) => {
     const { createPage, deletePage } = actions
-  
+
     deletePage(page)
     createPage({
       ...page,
@@ -24,12 +24,16 @@ exports.onCreatePage = ({ page, actions }) => {
                     'MaterialUI',
                     'PHP',
                     'MySQL',
-                    'Azure'
+                    'Azure',
+                    '.NET C#'
                 ],
                 experience: [
                     'Advocated for, researched, and moved the entire frontend from ES5/Require.Js to ES6 native import/export using webpack',
                     'Write cutting edge ES2017+ Javascript',
-                    'React.js using the latest Context API and React hooks'
+                    'React.js using the latest Context API and React hooks',
+                    'Maintain a PHP/MySQL app using Doctrine ORM',
+                    'Develop .NET API\'s',
+                    'Familiar with the Azure ecosystem, including Azure Functions.'
                 ],
                 imageName: 'dealerpolicy.png',
                 companyLink: 'https://dealerpolicy.com/'
