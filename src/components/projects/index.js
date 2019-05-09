@@ -31,7 +31,23 @@ const Projects = () => (
     </article>
     <hr />
     <article className={'project--container'}>
-      <div className={'row protfolio--row'}>
+      <div className={'row portfolio--row'}>
+        <div className={'column--2'}>
+          <h3>
+            <a href={'https://github.com/aleccaputo/skilift-api'}>
+              SkiLift Api <FaGithub className={'projects--icon'}/>
+            </a>
+          </h3>
+        </div>
+        <div className={'column--2'}>
+          <p>API for the SkiLift react app using Node.js, Express, and Mongo</p>
+          <p>Node.js (experimental mjs Files.), Express, MongoDB, Mongoose, Javascript, Security (JWT auth)</p>
+        </div>
+      </div>
+    </article>
+    <hr />
+    <article className={'project--container'}>
+      <div className={'row portfolio--row'}>
         <div className={'column--2'}>
           <h3>
             <a href={'https://github.com/codeforbtv/green-up-app'}>
@@ -47,7 +63,7 @@ const Projects = () => (
     </article>
     <hr />
     <article className={'project--container'}>
-      <div className={'row protfolio--row'}>
+      <div className={'row portfolio--row'}>
         <div className={'column--2'}>
           <h3>
             <a href={'https://github.com/aleccaputo/ski-lift'}>
