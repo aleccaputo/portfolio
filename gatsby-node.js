@@ -17,6 +17,10 @@ exports.onCreatePage = ({ page, actions }) => {
                 technologies: [
                     'Javascript',
                     'ReactJS',
+                    'Redux',
+                    'Reach Router',
+                    'RamdaJS',
+                    'Babel',
                     'Webpack',
                     'Grunt',
                     'CSS/LESS',
@@ -28,9 +32,13 @@ exports.onCreatePage = ({ page, actions }) => {
                     '.NET C#'
                 ],
                 experience: [
+                    'React, Redux/Context API (and the flux pattern), and Reach Router',
+                    'React Hooks',
+                    'ESLint, Flow, and Jest/Enzyme',
+                    'Webpack and Babel configuration proficiency',
+                    'Functional javascript with cutting edge ES2018+ Javascript',
+                    'MaterialUI',
                     'Advocated for, researched, and moved the entire frontend from ES5/Require.Js to ES6 native import/export using webpack',
-                    'Write cutting edge ES2017+ Javascript',
-                    'React.js using the latest Context API and React hooks',
                     'Maintain a PHP/MySQL app using Doctrine ORM',
                     'Develop .NET API\'s',
                     'Familiar with the Azure ecosystem, including Azure Functions.'
