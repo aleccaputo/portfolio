@@ -31,12 +31,12 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "flow && gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "flow": "flow",
-    "heroku-postbuild": "gatsby build"
+    "heroku-postbuild": "flow && gatsby build"
   },
   "devDependencies": {
     "flow": "^0.2.3",

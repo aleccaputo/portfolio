@@ -16,7 +16,7 @@ export const Experience = ({ jobs, internships }: Props) => {
   return (
     <div>
       <h1 className={'experience--title'}>Experience</h1>
-      {jobs.map((job: Job) => (
+      {jobs.filter((allJob: Job) => allJob.fullTime).map((job: Job) => (
         <div className={'row expierence--row'}>
           <hr />
           <div className={'column--2'}>
