@@ -1,11 +1,16 @@
+// @flow
 import React from "react";
-import PropTypes from "prop-types";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import "animate.css";
 import "./social.css";
+import type {SocialMedia} from '../../pages';
 
-const Social = ({ links }) => (
+type Props = {
+    links: SocialMedia,
+    email: string
+}
+const Social = ({ links, email }: Props) => (
   <div className={"social--container"}>
     <div className={"social--link"}>
       <OutboundLink
@@ -28,15 +33,12 @@ const Social = ({ links }) => (
     <div className={"social--link"}>
       <OutboundLink
         className={"animated faster"}
-        href={`mailto:${links.email}`}
+        href={`mailto:${email}`}
       >
         <FaEnvelope className={"social--icon social--email"} />
       </OutboundLink>
     </div>
   </div>
 );
-Social.propTypes = {
-  links: PropTypes.object
-};
 
 export default Social;

@@ -1,11 +1,17 @@
+// @flow
 import React from "react"
-import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Header from "../header"
+import type {SocialMedia} from '../../pages/index';
 import "./layout.css"
 
-export const Layout = ({ children, links }) => (
+type Props = {
+    email: string,
+    links: SocialMedia,
+    children: any
+}
+export const Layout = ({ children, links, email }: Props) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -32,16 +38,11 @@ export const Layout = ({ children, links }) => (
             <div className={'row layout--footer'}>
               <OutboundLink className={'column--3 col-centered'} href={links.linkedIn}>LinkedIn</OutboundLink>
               <OutboundLink className={'column--3 col-centered'} href={links.github}>Github</OutboundLink>
-              <OutboundLink className={'column--3 col-centered'} href={`mailto:${links.email}`}>Contact</OutboundLink>
+              <OutboundLink className={'column--3 col-centered'} href={`mailto:${email}`}>Contact</OutboundLink>
             </div>
           </footer>
         </div>
       </>
     )}
   />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  socialMediaLinks: PropTypes.object
-}
+);

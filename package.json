@@ -5,22 +5,23 @@
   "author": "Alec Caputo",
   "dependencies": {
     "animate.css": "^3.7.2",
-    "gatsby": "^2.15.28",
-    "gatsby-image": "^2.2.23",
-    "gatsby-plugin-google-analytics": "^2.1.19",
-    "gatsby-plugin-manifest": "^2.2.20",
+    "gatsby": "^2.18.21",
+    "gatsby-image": "^2.2.38",
+    "gatsby-plugin-flow": "^1.1.18",
+    "gatsby-plugin-google-analytics": "^2.1.32",
+    "gatsby-plugin-manifest": "^2.2.37",
     "gatsby-plugin-offline": "^2.2.10",
-    "gatsby-plugin-postcss": "^2.1.10",
-    "gatsby-plugin-react-helmet": "^3.1.10",
-    "gatsby-plugin-sharp": "^2.2.27",
-    "gatsby-source-filesystem": "^2.1.28",
-    "gatsby-transformer-sharp": "^2.2.19",
+    "gatsby-plugin-postcss": "^2.1.19",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sharp": "^2.3.13",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.12",
     "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.7.0"
+    "react-icons": "^3.8.0"
   },
   "keywords": [
     "gatsby"
@@ -34,7 +35,11 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "heroku-postbuild": "gatsby build",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "flow": "flow",
+    "heroku-postbuild": "gatsby build"
+  },
+  "devDependencies": {
+    "flow": "^0.2.3",
+    "flow-bin": "^0.115.0"
   }
 }

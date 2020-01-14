@@ -1,7 +1,7 @@
 exports.onCreatePage = ({ page, actions }) => {
-    const { createPage, deletePage } = actions
+    const { createPage, deletePage } = actions;
 
-    deletePage(page)
+    deletePage(page);
     createPage({
       ...page,
       context: {
@@ -44,10 +44,9 @@ exports.onCreatePage = ({ page, actions }) => {
                     'Familiar with the Azure ecosystem, including Azure Functions.'
                 ],
                 imageName: 'dealerpolicy.png',
-                companyLink: 'https://dealerpolicy.com/'
-            }
-        ],
-        internships: [
+                companyLink: 'https://dealerpolicy.com/',
+                fullTime: true
+            },
             {
                 company: 'Unidesk',
                 title: 'IT Intern',
@@ -57,7 +56,8 @@ exports.onCreatePage = ({ page, actions }) => {
                     'On-site VM deployments and server maintancince',
                     'IT Helpdesk',
                 ],
-                companyLink: 'https://docs.citrix.com/en-us/unidesk.html'
+                companyLink: 'https://docs.citrix.com/en-us/unidesk.html',
+                fullTime: false
             },
             {
                 company: 'SimpliVity',
@@ -68,7 +68,8 @@ exports.onCreatePage = ({ page, actions }) => {
                     'Apex',
                     'Helpdesk'
                 ],
-                companyLink: 'https://www.hpe.com/us/en/integrated-systems/simplivity.html'
+                companyLink: 'https://www.hpe.com/us/en/integrated-systems/simplivity.html',
+                fullTime: false
             }
         ]
       },
