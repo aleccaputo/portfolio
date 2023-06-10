@@ -5,7 +5,7 @@
   "author": "Alec Caputo",
   "dependencies": {
     "animate.css": "^3.7.2",
-    "gatsby": "^2.18.21",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-flow": "^1.1.18",
     "gatsby-plugin-google-analytics": "^2.1.32",
